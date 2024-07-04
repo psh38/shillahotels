@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/content.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/common.js"></script>
+  <script src="../js/sub_01.js"></script>
+</head>
+<body>
+  <div class="tit-area">
+    <h2 class="tit-h2">header / footer load 함수 써서 불러오기 작업해야함!!!</h2>
+  </div>
+
+  <div class="tit-area">
+    <h2 class="tit-h2">버튼 (disabled 만들어야함)</h2>
+  </div>
+  <h3 class="tit-h3">primary</h3>
+  <button type="button" class="btn-p l icon">
+    <span class="material-symbols-outlined" aria-hidden="true">
+      search
+    </span>
+    <span>검색</span>
+  </button>
+  <button type="button" class="btn-p m">
+   <span>검색</span>
+  </button>
+  <button type="button" class="btn-p s">
+    <span>인증번호 확인</span>
+  </button>
+  <button type="button" class="btn-p s">
+    <span>인증번호 확인</span>
+  </button>
+
+  <h3 class="tit-h3">secondary</h3>
+  <button type="button" class="btn-s s">인증번호 요청</button>
+  <button type="button" class="btn-s s">첨부하기</button>
+
+  <button type="button" class="btn-s more">
+    <span>더보기</span>
+  </button>
+
+  <h3 class="tit-h3">link</h3>
+  <a href="#" class="links">전문보기</a>
+  
+  <p class="txt-star">표기된 항목은 필수 입력 사항입니다.</p>
+
+  <div class="tit-area">
+    <h2 class="tit-h2">nodata</h2>
+  </div>
+
+  <!-- no-data (s) -->
+  <div class="no-data">
+    <p>검색결과를 찾을 수 없습니다.</p>
+  </div>
+  <!-- no-data (e) -->
+
+  <div class="tit-area">
+    <h2 class="tit-h2">폼 작업</h2>
+  </div>
+
+
+  <!-- 문의하기 form-list (s) -->
+  <form action="#">
+    <ul class="form-list">
+      <li>
+        <div class="item">지점선택</div>
+        <div class="data">
+          <div class="ipt-wrap select">
+            <select name="hotel" id="hotel" class="ipt">
+              <option value="" selected>지점을 선택해주세요.</option>
+              <option value="seoul">서울 신라</option>
+              <option value="jeju">제주 신라</option>
+              <option value="mono">신라모노그램</option>
+              <option value="stay">신라 스테이</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">구분</div>
+        <div class="data">
+          <ul class="radio-list">
+            <li>
+              <input type="radio" name="classification" id="cf_01" class="ipt blind" checked>
+              <label for="cf_01">칭찬</label>
+            </li>
+            <li>
+              <input type="radio" name="classification" id="cf_02" class="ipt blind">
+              <label for="cf_02">불만</label>
+            </li>
+            <li>
+              <input type="radio" name="classification" id="cf_03" class="ipt blind">
+              <label for="cf_03">문의</label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="item">제목</div>
+        <div class="data">
+          <div class="ipt-wrap">
+            <input type="text" class="ipt" placeholder="제목을 입력해주세요.">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">내용</div>
+        <div class="data">
+          <div class="ipt-wrap">
+            <textarea name="" id="" cols="30" rows="10" class="ipt" placeholder="내용을 입력해주세요."></textarea>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">게스트이름</div>
+        <div class="data">
+          <div class="ipt-wrap">
+            <input type="text" class="ipt" placeholder="이름을 입력해주세요.">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">휴대폰번호</div>
+        <div class="data side-btn">
+          <div class="ipt-wrap">
+            <input type="tel" class="ipt" placeholder="‘-’ 제외하고 숫자만 입력해주세요.">
+          </div>
+          <button type="button" class="btn-s s">
+            <span>인증번호 요청</span>
+          </button>
+        </div>
+      </li>
+      <!-- 인증번호 요청 완료 후 (s) -->
+      <li>
+        <div class="item">휴대폰번호</div>
+        <div class="data side-btn">
+          <div class="ipt-wrap ceri">
+            <input type="tel" class="ipt">
+            <span class="count">
+              03:00
+            </span>
+          </div>
+          <button type="button" class="btn-p s">
+            <span>인증번호 확인</span>
+          </button>
+        </div>
+        
+      </li>
+      <!-- 인증번호 요청 완료 후 (e) -->
+      <li>
+        <div class="item">이메일</div>
+        <div class="data email">
+          <div class="ipt-wrap">
+            <input type="email" class="ipt">
+          </div>
+          <div class="at">@</div>
+          <div class="ipt-wrap">
+            <input type="email" class="ipt">
+          </div>
+          <div class="ipt-wrap">
+            <select class="select-domain ipt">
+              <option value="" selected>직접입력</option>
+              <option value="daum.net">daum</option>
+              <option value="naver.com">naver</option>
+              <option value="gmail.com">gmail</option>
+              <option value="yahoo.com">yahoo</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">답변회신방법</div>
+        <div class="data">
+          <ul class="radio-list">
+            <li>
+              <input type="radio" name="reply" id="rp_01" class="ipt blind" checked>
+              <label for="rp_01">이메일</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="rp_02" class="ipt blind">
+              <label for="rp_02">전화</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="rp_03" class="ipt blind">
+              <label for="rp_03">SMS</label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="item option">첨부파일</div>
+        <div class="data file">
+          <div class="ipt-wrap">
+            <input type="text" class="ipt" readonly>
+          </div>
+          <div class="ipt-wrap">
+            <input type="file" id="file" class="ipt blind" title="첨부하기">
+            <label for="file" class="btn-s s">첨부하기</label>
+            <span class="file-name"></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </form>
+  <!-- 문의하기 form-list (e) -->
+
+  <div class="tit-area">
+    <h2 class="tit-h2">검색영역(데이트픽커 현재월 다음월 확인작업 필요)</h2>
+  </div>
+
+  <!-- 검색영역 (s) -->
+  <div class="search-area">
+    <div class="container">
+      <div class="top">
+        <div class="pick">
+          <div class="ipt-wrap select">
+            <select name="hotel" id="hotel" class="ipt">
+              <option value="" selected>전체호텔</option>
+              <option value="seoul">서울 신라</option>
+              <option value="jeju">제주 신라</option>
+              <option value="mono">신라모노그램</option>
+              <option value="stay">신라 스테이</option>
+            </select>
+          </div>
+          <div class="date-wrap">
+            <input type="text" class="ipt date-picker" id="today-month" placeholder="YYYY-MM-DD">
+            <input type="text" class="ipt date-picker" id="next-month" placeholder="YYYY-MM-DD">
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" class="ipt" placeholder="검색어를 입력해주세요.">
+          <button type="button" class="btn-p m">검색</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <strong class="tit-h4">키워드</strong>
+        <ul class="check-list">
+          <li>
+            <input type="checkbox" name="keyword" id="key_01" class="ipt blind">
+            <label for="key_01">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_02" class="ipt blind">
+            <label for="key_02">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_03" class="ipt blind">
+            <label for="key_03">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_04" class="ipt blind">
+            <label for="key_04">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_05" class="ipt blind">
+            <label for="key_05">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_06" class="ipt blind">
+            <label for="key_06">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_07" class="ipt blind">
+            <label for="key_07">조식</label>
+          </li>
+          <li>
+            <input type="checkbox" name="keyword" id="key_08" class="ipt blind">
+            <label for="key_08">조식</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 검색영역 (e) -->
+
+
+  <div class="tit-area">
+    <h2 class="tit-h2">검색영역(horizontal)</h2>
+  </div>
+
+  <!-- 검색영역 horizontal (s) -->
+  <div class="search-area horizontal">
+    <div class="container">
+      <div class="top">
+        <div class="pick">
+          <div class="ipt-wrap select">
+            <select name="hotel" id="hotel" class="ipt">
+              <option value="" selected>전체호텔</option>
+              <option value="seoul">서울 신라</option>
+              <option value="jeju">제주 신라</option>
+              <option value="mono">신라모노그램</option>
+              <option value="stay">신라 스테이</option>
+            </select>
+          </div>
+
+          <div class="search">
+            <input type="text" class="ipt" placeholder="검색어를 입력해주세요.">
+            <button type="button" class="btn-p m">검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 검색영역 horizontal (e) -->
+
+
+  <div class="tit-area">
+    <h2 class="tit-h2">건수 영역</h2>
+  </div>
+
+  <div class="total-num-area">
+    총 <em>0</em>건
+  </div>
+
+  <div class="total-num-area">
+    총 <em>8</em>건
+  </div>
+
+  <div class="tit-area">
+    <h2 class="tit-h2">event-list</h2>
+  </div>
+
+  <!-- eventlist(s) -->
+  <ul class="event-list">
+    <li>
+      <a href="#" class="block">
+        <div class="flag">
+          <span></span>
+        </div>
+        <div class="img-wrap">
+          <img src="" alt="">
+        </div>
+        <strong class="tit-h3"></strong>
+        <div class="info">
+          <p class="desc"></p>
+          <span class="date"></span>
+          <div class="price-wrap">
+              <em></em>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <!-- eventlist(e) -->
+
+  <div class="tit-area">
+    <h2 class="tit-h2">탭</h2>
+  </div>
+
+  <!-- FAQ tab (s) -->
+  <div class="tab-wrap">
+    <ul class="tab-list faq">
+      <li><a href="#">탭1</a></li>
+      <li><a href="#">탭2</a></li>
+      <li><a href="#">탭3</a></li>
+      <li><a href="#">탭4</a></li>
+      <li><a href="#">탭5</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- 탭 콘텐츠 (s) -->
+      <div class="tab-pannel on">
+        탭내용111
+      </div>
+      <!-- 탭 콘텐츠 (e) -->
+      <!-- 탭 콘텐츠 (s) -->
+      <div class="tab-pannel">
+        탭내용222
+      </div>
+      <!-- 탭 콘텐츠 (e) -->
+      <!-- 탭 콘텐츠 (s) -->
+      <div class="tab-pannel">
+        탭내용333
+      </div>
+      <!-- 탭 콘텐츠 (e) -->
+      <!-- 탭 콘텐츠 (s) -->
+      <div class="tab-pannel">
+        탭내용4444
+      </div>
+      <!-- 탭 콘텐츠 (e) -->
+      <!-- 탭 콘텐츠 (s) -->
+      <div class="tab-pannel">
+        탭내용555
+      </div>
+      <!-- 탭 콘텐츠 (e) -->
+    </div>
+  </div>
+  <!-- FAQ tab (e) -->
+
+  <div class="tit-area">
+    <h2 class="tit-h2">아코디언</h2>
+  </div>
+
+  <!-- FAQ accordian (s) -->
+  <ul class="faq-list">
+    <li class="acco-item">
+      <div class="acco-head">
+        <a href="#" class="acco-btn">
+          <span class="category">기타</span>
+          <strong class="tit">객실 업그레이드 쿠폰은 어떻게 사용하나요?</strong>
+        </a>
+      </div>
+      <div class="acco-body">
+        ddddddddddddddddddddddddddddddddddddddddddd<br>
+        dddddddddddddddddddd
+      </div>
+    </li>
+    <li class="acco-item">
+      <div class="acco-head">
+        <a href="#" class="acco-btn">
+          <span class="category">기타</span>
+          <strong class="tit">객실 업그레이드 쿠폰은 어떻게 사용하나요?</strong>
+        </a>
+      </div>
+      <div class="acco-body">
+        ddddddddddddddddddddddddddddddddddddddddddd<br>
+        dddddddddddddddddddd
+      </div>
+    </li>
+    <li class="acco-item">
+      <div class="acco-head">
+        <a href="#" class="acco-btn">
+          <span class="category">기타</span>
+          <strong class="tit">객실 업그레이드 쿠폰은 어떻게 사용하나요?</strong>
+        </a>
+      </div>
+      <div class="acco-body">
+        ddddddddddddddddddddddddddddddddddddddddddd<br>
+        dddddddddddddddddddd
+      </div>
+    </li>
+  </ul>
+  
+  <!-- FAQ accordian (e) -->
+
+  <div class="tit-area">
+    <h2 class="tit-h2">페이지네이션</h2>
+  </div>
+
+  <!-- 페이지네이션 (s) -->
+  <div class="paging">
+    <button type="button" class="btn-start">
+      <span class="blind">첫 페이지</span>
+    </button>
+    <button type="button" class="btn-prev">
+      <span class="blind">이전 페이지</span>
+    </button>
+    <ul>
+      <li class="on">
+        <a href="#"> <!--on클래스 _+ <span class="blind">현재 페이지</span>-->
+          1
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          2
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          3
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          4
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          5
+        </a>
+      </li>
+    </ul>
+    <button type="button" class="btn-next">
+      <span class="blind">다음 페이지</span>
+    </button>
+    <button type="button" class="btn-last">
+      <span class="blind">마지막 페이지</span>
+    </button>
+  </div>
+  <!-- 페이지네이션 (e) -->
+</body>
+</html>

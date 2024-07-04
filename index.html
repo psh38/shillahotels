@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shilla Hotel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!--jquery ui-->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script     src="js/jquery.easing.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--jquey ui-->
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>	
+  <link rel="icon" href="./images/favicon.ico">
+  <!-- 검색엔진 및 파비콘 넣기 -->
+</head>
+<body>  
+  <div class="popup">
+    <h2><img src="./images/popuplogo.svg" alt="호텔신라로고"></h2>
+    <br>
+    <p>시가총액 100대 기업내 선정 Renewal Project</p>
+    <br>
+    <p>본 사이트는 구직용 포트폴리오 사이트이며,<br> 실제로 운영되는 사이트가 아닙니다.</p>
+    <p>팀 야인시대 : 박소현, 최원석, 이다영</p>
+    <p>제작기간 : 2024. 03. 21 ~ 04. 02</p>
+    <p>기획서 : <a href="https://www.figma.com/file/G77C6rLl5Mqywl5ZuyrOmu/%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94?type=design&node-id=43%3A906&mode=design&t=xSsHu8O8m2ijVwYI-1" target="_blank">피그마</a> 코드 : <a href="https://github.com/psh38/The-Shilla-Hotel" target="_blank">깃허브</a></p>
+    <p>개발환경 : html5, css3, JQuery</p>
+    <p>기획 : 팀원 전체&nbsp; | &nbsp; 디자인 : 구현 담당자</p>
+    <h3>구현 완료 페이지</h3>
+    <p>박소현 : 메인페이지, <a href="event.html" target="_blank">이벤트</a>, <a href="package.html" target="_blank">패키지 프로모션</a>, <a href="faq.html" target="_blank">FAQ</a>, <a href="inquiry.html" target="_blank">문의하기</a></p>
+    <p>최현석 : 메인페이지, <a href="standard.html" target="_blank">스탠다드</a>, <a href="executive.html" target="_blank">이그제큐티브</a>, <a href="sweet.html" target="_blank">스위트</a>, <a href="layeon.html" target="_blank">라연</a>, <a href="continental.html" target="_blank">콘티넨탈</a>, <a href="aliakke.html" target="_blank">아리아께</a>, <a href="palseon.html" target="_blank">팔선</a></p>
+    <p>이다영 : 메인페이지, <a href="seoul.html" target="_blank">서울신라</a>, <a href="jeju.html" target="_blank">제주신라</a></p>
+    <br>
+    <input type="checkbox" id="check">
+    <span class="check">
+      <i class="fa-regular fa-square-check"></i>
+      <i class="fa-solid fa-square-check"></i>
+    </span>
+    
+    <label for="check">하루 안보기</label>
+
+    <button>닫기</button>
+
+  </div>
+
+  <div class="wrapper">
+    <!-- 작업담당자 : 박소현 (s) -->
+    <header id="header"></header> <!--header에 open 클래스 들어오면 전체메뉴 열림-->
+    <div class="allmenu-wrap" id="allmenu"></div>
+    <!-- 작업담당자 : 박소현 (e) -->
+    
+    <main id="content" class="main">
+
+      <!-- 작업담당자 박소현 (s) -->
+      <!-- scroll-navi (s) -->
+      <nav class="scroll-navi">
+        <ul>
+          <li class="white">
+            <a href="#section1">HOME</a>
+          </li>
+          <li>
+            <a href="#section2">객실소개</a>
+          </li>
+          <li>
+            <a href="#section3">EVENT</a>
+          </li>
+          <li class="white">
+            <a href="#section4">MEMBERSHIP</a>
+          </li>
+          <li>
+            <a href="#section5">시설소개</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- scroll-navi (e) -->
+      <!-- 작업담당자 박소현 (e ) -->
+
+      <!-- 작업담당자 : 박소현 (s) -->
+      <div class="section home" id="section1">
+        <div class="weather-area">
+          <ul class="slider-list">
+            <li class="slide">
+                <span class="seoul"></span>
+                <div class="ico-condition">
+                </div>
+                <p class="temperature"></p>
+            </li>
+            <li class="slide">
+                <span class="jeju"></span>
+                <div class="ico-condition">
+                </div>
+                <p class="temperature"></p>
+            </li>
+            <li class="slide">
+                <span class="danang"></span>
+                <div class="ico-condition"></div>
+                <p class="temperature"></p>
+            </li>
+          </ul>
+          <div class="btn-area">
+            <button class="btn-prev">
+              <span class="blind">이전</span>
+            </button>
+            <button class="btn-next">
+              <span class="blind">다음</span>
+            </button>
+          </div>
+        </div>
+        <div class="main-txt">
+          <strong>Relaxing Rest, The Shilla Hotel</strong>
+        </div>
+
+        <div class="reservation-area">
+          <div class="left">
+            <div class="top">
+              <div class="resevation">
+                <strong class="tit">예약</strong>
+                <button type="button" class="btn-select">
+                  <span>ROOM</span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">ROOM</a>
+                  </li>
+                  <li>
+                    <a href="#">DINING</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="hotel">
+                <strong class="tit">호텔</strong>
+                <button type="button" class="btn-select">
+                  <span>서울신라</span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">서울신라</a>
+                  </li>
+                  <li>
+                    <a href="#">제주신라</a>
+                  </li>
+                  <li>
+                    <a href="#">신라모노그램</a>
+                  </li>
+                  <li>
+                    <a href="#">신라스테이</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="all-slide">
+                <div class="pick-area" role="button" tabindex="0">
+                  <div class="chk-date">
+                    <div class="chk-in">
+                      <strong class="tit">체크인</strong>
+                      <span class="date">
+                        <input type="hidden" value="" name="Date" id="today-month-val">
+                        <em>03월 01 일 (금)</em>
+                      </span>
+                    </div>
+                    <div class="num">
+                      <em>1</em>박
+                    </div>
+                    <div class="chk-out">
+                      <strong class="tit">체크아웃</strong>
+                      <span class="date">
+                        <input type="hidden" value="" name="Date" id="next-month-val">
+                        <em> 03월 02 일 (토)</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="guest-info">
+                    <div class="room">
+                      <strong class="tit">객실수</strong>
+                      <span class="num">
+                        1
+                      </span>
+                    </div>
+                    <div class="adult">
+                      <strong class="tit">성인</strong>
+                      <span class="num">
+                        1
+                      </span>
+                    </div>
+                    <div class="child">
+                      <strong class="tit">어린이</strong>
+                      <span class="num">
+                        1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="reserv-box">
+                  <div class="calendar-wrap" id="today-month">
+                  </div>
+                  <div class="calendar-wrap" id="next-month">
+                  </div>
+                  <div class="guest-info-wrap">
+                    <div class="tooltip">
+                      어린이 연령정보
+                      <div class="tool-txt">4세 12세까지 어린이 입니다.</div>
+                    </div>
+                    <ul class="room-info-list">
+                      <li>
+                        <span class="tit">객실 1</span>
+                        <ul class="quantity-list">
+                          <li class="quantity">
+                            <button type="button" class="btn-minus">
+                              <span class="blind">제외</span>
+                            </button>
+                            <input type="number" class="ipt blind" title="성인" value="1"  min="1" max="3">
+                            <span class="count">성인 1</span>
+                            <button type="button" class="btn-plus">
+                              <span class="blind">추가</span>
+                            </button>
+                          </li>
+                          <li class="quantity">
+                            <button type="button" class="btn-minus">
+                              <span class="blind">제외</span>
+                            </button>
+                            <input type="number" class="ipt blind"  title="어린이" value="0"  min="0" max="2">
+                            <span class="count">어린이 0</span>
+                            <button type="button" class="btn-plus">
+                              <span class="blind">추가</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn-add">
+                      <span>객실추가</span>
+                    </button>
+                    <p class="txt-star">객실추가는 최대 3개까지만 입력 가능합니다.</p>
+                    <div class="btn-area complete">
+                      <button type="button" class="btn-p m">
+                        <span>선택완료</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promotion">
+                <button type="button" class="btn-prom">포로모션코드</button>
+
+                <div class="ipt-wrap">
+                  <input type="text" class="ipt" placeholder="프로모션 코드를 입력해주세요." title="프로모션코드 입력">
+                  <button type="button" class="btn-p s">확인</button>
+                </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <button type="button" class="btn-p l icon">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                search
+              </span>
+              <span>검색</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="reservation-area mo">
+          <div class="resevation">
+            <button type="button" class="btn-select">
+              <span>ROOM</span>
+            </button>
+            <ul>
+              <li>
+                <a href="#">ROOM</a>
+              </li>
+              <li>
+                <a href="#">DINING</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hotel">
+            <button type="button" class="btn-select">
+              <span>서울신라</span>
+            </button>
+            <ul>
+              <li>
+                <a href="#">서울신라</a>
+              </li>
+              <li>
+                <a href="#">제주신라</a>
+              </li>
+              <li>
+                <a href="#">신라모노그램</a>
+              </li>
+              <li>
+                <a href="#">신라스테이</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="chk-date">
+            <a href="#" class="link-pop">
+              <div class="chk-in">
+                <span class="date">
+                  03월 01 일 (금)
+                </span>
+              </div>
+              <div class="num">
+                <em>1</em>박
+              </div>
+              <div class="chk-out">
+                <span class="date">
+                  03월 02 일 (토)
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="guest-info">
+            <a href="#" class="link-pop">
+              <div class="room">
+                <span class="num">
+                  1
+                </span>
+                <strong class="tit">객실수</strong>
+              </div>
+              <div class="adult">
+                <span class="num">
+                  1
+                </span>
+                <strong class="tit">성인</strong>
+              </div>
+              <div class="child">
+                <span class="num">
+                  1
+                </span>
+                <strong class="tit">어린이</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="promotion">
+            <button type="button" class="btn-prom">포로모션코드</button>
+
+            <div class="ipt-wrap">
+              <input type="text" class="ipt" placeholder="프로모션 코드를 입력해주세요." title="프로모션코드 입력">
+              <button type="button" class="btn-p s">확인</button>
+            </div>
+          </div>
+
+          <div class="btn-area bottom">
+            <button type="button" class="btn-p l icon">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                search
+              </span>
+              <span>검색</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 작업담당자 : 박소현 (e) -->
+
+      <!-- 작업담당자 : 최원석 (s) -->
+      <div class="section room4" id="section2">
+        <div class="container room4tab">
+          <div class="tit-area roomarea12">
+            <h2 class="tit-h2">객실소개</h2>
+            <div class="tab">
+              <ul class="tab-menu">
+                <li class="active"><a href="#tabs-1" >전체</a></li>
+                <li><a href="#tabs-2">이그제큐티브</a></li>
+                <li><a href="#tabs-3">스탠다드</a></li>
+                <li><a href="#tabs-4">스위트</a></li>
+              </ul>
+            </div>			
+          </div>
+          <div id="tabs">
+            <div class="tab-content">
+              <div id="tabs-1" data-ind="0" class="tabn">
+                <div class="swiper sswiper" data-id="0">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_stardard_room2.jpg" alt="stardard_room2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">디럭스</h4>
+                        <p class="businessp">심플한 인테리어와 아늑한 분위기가 <br>편안함을 더해주는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_1.jpg" alt="deluxe2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">비즈니스 디럭스</h4>
+                        <p class="businessp">선셋 체크인,여유로운 오전 <br>진정한 휴식을 느낄수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_2.jpg" alt="deluxe2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">디럭스</h4>
+                        <p class="businessp">DELUXE ROOM<br>남산 또는 시티 뷰</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_3.jpg" alt="deluxe3">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">배리어프리 비즈니스 디럭스</h4>
+                        <p class="businessp">창밖에서 내리쬐는 햇살의 따뜻함이 느껴지는 <br>여유로운 공간을 느낄수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_coner_2.jpg" alt="coner_2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">그랜드 코너 디럭스</h4>
+                        <p class="businessp">자연경관이 돋보이는 뷰와 클래식한 무드의 디럭스룸 <br>일상을 벗어나 편안한 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_coner_1.png" alt="coner_1_room1">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">그랜드 코너 디럭스</h4>
+                        <p class="businessp">통유리 너머 들어오는 채광으로 <br>자연의 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend1.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">여유로운 휴식공간이 돋보이는 비즈니스 디럭스 <br>룸 라운지 서비스를 더한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend2.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">이그제큐티브 객실중 가장 큰 규모로 욕실에서 <br>야경이 돋보이고 라운지 서비스를 더한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend3.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">클래식한 무드의 비즈니스룸 <br>일상을 벗어난 편안한 휴식</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend4.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">기품 있는 분위기를 느끼며 최상의 <br>휴식을 누릴수 있는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_1.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">통유리 너머 들어오는 채광으로 <br>자연의 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_2.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">가장 편안한 숙면을 돕는 최상급 침구 <br>넓은 공간감이 느껴지는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">수페리어 스위트</h4>
+                        <p class="businessp">영빈관이 내려다보이는 <br>아늑하고 모던한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">코리안 스위트</h4>
+                        <p class="businessp">한국 전통의 미를 경험할수 있는 <br>서울 신라호텔 유일의 온돌 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">스위트</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">코너 스위트</h4>
+                          <p class="businessp">복도 가장 안쪽에 위치해 조용하고 <br>안락한 분위기의 객실</p>
+                          <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">스위트</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">프리미어 스위트</h4>
+                          <p class="businessp">비즈니스 미팅과 프리이빗한 휴식을 <br>동시에 즐길수 있는 객실</p>
+                          <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">수페리어 스위트</h4>
+                        <p class="businessp">모던한 분위기의 고급스러운 공간 여유로운 <br>응접실과 다이닝 룸,업무 공간 및 침실로 구성된 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">프리미어 스위트</h4>
+                        <p class="businessp">신라 브랜드만의 특별한 서비스와 <br>경험을 누릴 수 있는 시그니처 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    
+                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-2" data-ind="1" class="tabn">
+                <div class="swiper sswiper" data-id="1">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend1.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">여유로운 휴식공간이 돋보이는 비즈니스 디럭스 <br>룸 라운지 서비스를 더한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend2.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">이그제큐티브 객실중 가장 큰 규모로 욕실에서 <br>야경이 돋보이고 라운지 서비스를 더한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend3.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">클래식한 무드의 비즈니스룸 <br>일상을 벗어난 편안한 휴식</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_grend4.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 비즈니스 디럭스</h4>
+                        <p class="businessp">기품 있는 분위기를 느끼며 최상의 <br>휴식을 누릴수 있는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_1.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">통유리 너머 들어오는 채광으로 <br>자연의 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_ex_2.png" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">이그제큐티브</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">이그제큐티브 그랜드 디럭스</h4>
+                        <p class="businessp">가장 편안한 숙면을 돕는 최상급 침구 <br>넓은 공간감이 느껴지는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                  </ul> 
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-3" data-ind="2" class="tabn">
+                <div class="swiper sswiper" data-id="2">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_stardard_room2.jpg" alt="stardard_room2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">디럭스</h4>
+                        <p class="businessp">심플한 인테리어와 아늑한 분위기가 <br>편안함을 더해주는 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_1.jpg" alt="deluxe2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">비즈니스 디럭스</h4>
+                        <p class="businessp">선셋 체크인,여유로운 오전 <br>진정한 휴식을 느낄수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_2.jpg" alt="deluxe2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">디럭스</h4>
+                        <p class="businessp">DELUXE ROOM<br>남산 또는 시티 뷰</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_deluxe_3.jpg" alt="deluxe3">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">배리어프리 비즈니스 디럭스</h4>
+                        <p class="businessp">창밖에서 내리쬐는 햇살의 따뜻함이 느껴지는 <br>여유로운 공간을 느낄수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_coner_2.jpg" alt="coner_2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">그랜드 코너 디럭스</h4>
+                        <p class="businessp">자연경관이 돋보이는 뷰와 클래식한 무드의 디럭스룸 <br>일상을 벗어나 편안한 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_coner_1.png" alt="coner_1_room1">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스탠다드</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">그랜드 코너 디럭스</h4>
+                        <p class="businessp">통유리 너머 들어오는 채광으로 <br>자연의 휴식을 즐길수 있는곳</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                     </a>
+                    </li>
+                  </ul>
+                  
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-4" data-ind="3" class="tabn">
+                <div class="swiper sswiper" data-id="3">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">수페리어 스위트</h4>
+                        <p class="businessp">영빈관이 내려다보이는 <br>아늑하고 모던한 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">코리안 스위트</h4>
+                        <p class="businessp">한국 전통의 미를 경험할수 있는 <br>서울 신라호텔 유일의 온돌 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">스위트</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">코너 스위트</h4>
+                          <p class="businessp">복도 가장 안쪽에 위치해 조용하고 <br>안락한 분위기의 객실</p>
+                          <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">스위트</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">프리미어 스위트</h4>
+                          <p class="businessp">비즈니스 미팅과 프리이빗한 휴식을 <br>동시에 즐길수 있는 객실</p>
+                          <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">수페리어 스위트</h4>
+                        <p class="businessp">모던한 분위기의 고급스러운 공간 여유로운 <br>응접실과 다이닝 룸,업무 공간 및 침실로 구성된 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none"><div class="image-box">
+                        <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">스위트</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">프리미어 스위트</h4>
+                        <p class="businessp">신라 브랜드만의 특별한 서비스와 <br>경험을 누릴 수 있는 시그니처 객실</p>
+                        <p class="room-type">침대타입 : 더블 킹 사이즈(트윈)</p>
+                      </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section event4" id="section3">
+        <div class="container">
+          <div class="tit-area">
+            <h2 class="tit-h2">EVENT</h2>
+            <div class="tab2">
+              <ul class="tab-menu2">
+                <li><a href="#tabs-1" class="active">전체</a></li>
+                <li><a href="#tabs-2">서울신라</a></li>
+                <li><a href="#tabs-3">제주신라</a></li>
+                <li><a href="#tabs-4">신라모노그램</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabs2">
+            <div class="tab-content2">
+              <div id="tabs-5" data-ind="4" class="tabn">
+                <div class="swiper rswiper">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                    <a href="#none">
+                      <div class="image-box">
+                        <img src="images/img_main_event2.jpg" alt="main_event2">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Pamper Your Puppy</h4>
+                        <p class="businessp">펫객실 + 월컴기프트<br>
+                        펫 프렌들리 서비스</p>
+                        <p class="room-type">2024.01.29~2024.07.30</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                      <div class="image-box">
+                        <img src="images/img_main_event1.png" alt="event1">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">MAKE YOUR 24H</h4>
+                        <p class="businessp">수요일 전용 24시간<br>
+                        STAY객실 1박</p>
+                        <p class="room-type">2024.03.14~2024.06.29</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                      <div class="image-box">
+                        <img src="images/main_event3.jpg" alt="event3">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">EASY PASS</h4>
+                        <p class="businessp">키오스크 IN&bull;OUT<br>객실특별 요금 + 사우나</p>
+                        <p class="room-type">2024.03.03~2024.07.31</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event4.png" alt="event4 ">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Welcome to Jeju</h4>
+                        <p class="businessp">객실 + 뮤지엠엑스 + 제주샌드<br>
+                        제주강정 + 포토북제작권</p>
+                        <p class="room-type">2024.03.03~2024.08.31</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event_5.png" alt="event_5">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Plan F&bull;B</h4>
+                        <p class="businessp">호텔객실 + 조식 + 커피<br>
+                        쿠스미 티백세트 + 전시회 티켓</p>
+                        <p class="room-type">2024.03.05~2024.08.31</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event_6.jpg" alt="event_6">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">제주신라 </h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">놀멍쉬멍</h4>
+                        <p class="businessp">최대7인 반려견과 <br>
+                        함께하는 프라이빗 휴가</p>
+                        <p class="room-type">2024.03.06~2024.09.31</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event7.png" alt="event7">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                        <p class="businessp">3박이상 최대30%혜택<br>
+                        최대9인까지 가능</p>
+                        <p class="room-type">2023.09.06~2024.10.31</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event8.png" alt="event8">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                        <p class="businessp">2박이상 최대30%혜택<br>
+                          최대9인까지 가능</p>
+                        <p class="room-type">2023.09.06~2024.11 .31</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event9.png" alt="event9">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                        <p class="businessp">최대10인<br>2박이상 최대 20%혜택</p>
+                        <p class="room-type">2023.09.06~2024.12 .31</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event10.jpg" alt="event10">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Villas Moment</h4>
+                        <p class="businessp">최대 9인 <br>추억이 담긴 프라이빗 여행</p>
+                        <p class="room-type">2023.09.06~2024.12 .31</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event11.png" alt="event_11">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Tasty Holiday</h4>
+                        <p class="businessp">객실 <br>조식</p>
+                        <p class="room-type">2023.08.06~2024.12 .31</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event12.png" alt="event12">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">서울신라</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Villas Dining</h4>
+                        <p class="businessp">최대 9인 프라이빗 홈파티를 즐기며<br>자연속 휴식에 집중</p>
+                        <p class="room-type">2023.10.06~2024.12 .12</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event13.png" alt="event13">
+                      </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">신라모노그램</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">Hello Mono</h4>
+                        <p class="businessp">객실 <br>조식</p>
+                        <p class="room-type">2023.10.06~2024.12 .12</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event14.png" alt="event14">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">신라모노그램</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">ALL Day Swimmimg for kids</h4>
+                        <p class="businessp">최대8인 ,우리 아이와 함께하는<br>사계절 프라이빗 수영장</p>
+                        <p class="room-type">2023.10.06~2024.12 .15</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event15.png" alt="event15">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">신라모노그램</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">3人3色</h4>
+                        <p class="businessp">주중2인 객실 + 업그레이드<br>부대업장2+1</p>
+                        <p class="room-type">2023.10.06~2024.10 .12</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event16.png" alt="event16">
+                        </div>
+                      <div class="flag">
+                        <h5 class="tit-h5">신라모노그램</h5>
+                      </div>
+                      <div class="bg2">
+                        <h4 class="tit-h4">3人3色</h4>
+                        <p class="businessp">주중2인 객실 + 업그레이드<br>부대업장2+1</p>
+                        <p class="room-type">2023.10.06~2024.10 .12</p>
+                      </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event17.png" alt="event17">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                        <h4 class="tit-h4">신라모노그램 투숙객을 위한 특별 혜택</h4>
+                        <p class="businessp">모던한 분위기의 고급스러운 공간 <br>신라모노그램 혜택</p>
+                        <p class="room-type">2023.10.06~2024.11 .12</p>
+                      </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event18.png" alt="event18">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">신라모노그램 투숙객을 위한 특별 혜택</h4>
+                          <p class="businessp">주변 관광지 <br>제휴 혜택</p>
+                          <p class="room-type">2023.10.06~2024.12 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div> 
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-6" data-ind="5" class="tabn">
+                <div class="swiper rswiper">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event7.png" alt="event7">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                          <p class="businessp">3박이상 최대30%혜택<br>
+                          최대9인까지 가능</p>
+                          <p class="room-type">2023.09.06~2024.10.31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event8.png" alt="event8">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                          <p class="businessp">2박이상 최대30%혜택<br>
+                            최대9인까지 가능</p>
+                          <p class="room-type">2023.09.06~2024.11 .31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event9.png" alt="event9">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Stay Longer,Save More!</h4>
+                          <p class="businessp">최대10인<br>2박이상 최대 20%혜택</p>
+                          <p class="room-type">2023.09.06~2024.12 .31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event10.jpg" alt="event10">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Villas Moment</h4>
+                          <p class="businessp">최대 9인 <br>추억이 담긴 프라이빗 여행</p>
+                          <p class="room-type">2023.09.06~2024.12 .31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event11.png" alt="event_11">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Tasty Holiday</h4>
+                          <p class="businessp">객실 <br>조식</p>
+                          <p class="room-type">2023.08.06~2024.12 .31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event12.png" alt="event12">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">서울신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Villas Dining</h4>
+                          <p class="businessp">최대 9인 프라이빗 홈파티를 즐기며<br>자연속 휴식에 집중</p>
+                          <p class="room-type">2023.10.06~2024.12 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-7" data-ind="6" class="tabn">
+                <div class="swiper rswiper">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event2.jpg" alt="main_event2">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Pamper Your Puppy</h4>
+                          <p class="businessp">펫객실 + 월컴기프트<br>
+                          펫 프렌들리 서비스</p>
+                          <p class="room-type">2024.01.29~2024.07.30</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event1.png" alt="event1">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">MAKE YOUR 24H</h4>
+                          <p class="businessp">수요일 전용 24시간<br>
+                          STAY객실 1박</p>
+                          <p class="room-type">2024.03.14~2024.06.29</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/main_event3.jpg" alt="event3">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">EASY PASS</h4>
+                          <p class="businessp">키오스크 IN&bull;OUT<br>객실특별 요금 + 사우나</p>
+                          <p class="room-type">2024.03.03~2024.07.31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event4.png" alt="event4 ">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Welcome to Jeju</h4>
+                          <p class="businessp">객실 + 뮤지엠엑스 + 제주샌드<br>
+                          제주강정 + 포토북제작권</p>
+                          <p class="room-type">2024.03.03~2024.08.31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event_5.png" alt="event_5">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Plan F&bull;B</h4>
+                          <p class="businessp">호텔객실 + 조식 + 커피<br>
+                          쿠스미 티백세트 + 전시회 티켓</p>
+                          <p class="room-type">2024.03.05~2024.08.31</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event_6.jpg" alt="event_6">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">제주신라 </h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">놀멍쉬멍</h4>
+                          <p class="businessp">최대7인 반려견과 <br>
+                          함께하는 프라이빗 휴가</p>
+                          <p class="room-type">2024.03.06~2024.09.31</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+              <div id="tabs-8" data-ind="7" class="tabn">
+                <div class="swiper rswiper">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event13.png" alt="event13">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">Hello Mono</h4>
+                          <p class="businessp">객실 <br>조식</p>
+                          <p class="room-type">2023.10.06~2024.12 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event14.png" alt="event14">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">ALL Day Swimmimg for kids</h4>
+                          <p class="businessp">최대8인 ,우리 아이와 함께하는<br>사계절 프라이빗 수영장</p>
+                          <p class="room-type">2023.10.06~2024.12 .15</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event15.png" alt="event15">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">3人3色</h4>
+                          <p class="businessp">주중2인 객실 + 업그레이드<br>부대업장2+1</p>
+                          <p class="room-type">2023.10.06~2024.10 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event16.png" alt="event16">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">3人3色</h4>
+                          <p class="businessp">주중2인 객실 + 업그레이드<br>부대업장2+1</p>
+                          <p class="room-type">2023.10.06~2024.10 .12</p>
+                        </div>
+                     </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event17.png" alt="event17">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">신라모노그램 투숙객을 위한 특별 혜택</h4>
+                          <p class="businessp">모던한 분위기의 고급스러운 공간 <br>신라모노그램 혜택</p>
+                          <p class="room-type">2023.10.06~2024.11 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide imgslide">
+                      <a href="#none">
+                        <div class="image-box">
+                          <img src="images/img_main_event18.png" alt="event18">
+                        </div>
+                        <div class="flag">
+                          <h5 class="tit-h5">신라모노그램</h5>
+                        </div>
+                        <div class="bg2">
+                          <h4 class="tit-h4">신라모노그램 투숙객을 위한 특별 혜택</h4>
+                          <p class="businessp">주변 관광지 <br>제휴 혜택</p>
+                          <p class="room-type">2023.10.06~2024.12 .12</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="play-pause">
+                    <div class="swiper-play"><a href="#none"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="swiper-pause"><a href="#none"><i class="fa-solid fa-pause"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next nextar"></div>
+                  <div class="swiper-button-prev prevar"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- 작업담당자 : 최원석 (e) -->
+
+      <!-- 작업담당자 : 이다영 (s) -->
+      <div class="section membership" id="section4">
+        <div class="container">
+          <div class="tit-area">
+            <h2 class="tit-h2">MEMBERSHIP</h2>
+          </div>
+          <div class="membership-card">
+            <ul class="membership-pager btn-area">
+              <li><button class="mslide1">blue club</button></li>
+              <li><button class="mslide2">shilla s</button></li>
+              <li><button class="mslide3">shilla rewards</button></li>
+            </ul>
+            <ul class="membership-wrapper">
+              <li class="blue-club members">
+                <ul>
+                  <li><img src="./images/img_main_membershipcard4.png" alt="블루클럽"></li>
+                  <li><img src="./images/img_main_membershipcard5.png" alt="프리미엄블루"></li>
+                </ul>
+                <p class="tb-members"><img src="./images/img_main_membershiptb2.png" alt=""></p>
+                <p>
+                  제주신라호텔을 찾아 주시는 고객님께 제주의 푸른바다와 대자연<br> 그리고 편안한 휴식공간을
+                  더 많은 혜택으로 이용하실 수 있습니다.<br>
+                  세계적인 명문 리조트, 제주신라호텔에서 최상의 서비스와 함께<br> 다양한 혜택을 경험하시기 바랍니다.
+                </p>
+              </li>
+              <li class="shilla-s members">
+                <ul>
+                  <li><img src="./images/img_main_membershipcard1.png" alt="브라운등급"></li>
+                  <li><img src="./images/img_main_membershipcard2.png" alt="실버등급"></li>
+                  <li><img src="./images/img_main_membershipcard3.png" alt="골드등급"></li>
+                </ul>
+                <p class="tb-members"><img src="./images/img_main_membershiptb1.png" alt=""></p>
+                <p>
+                  디럭스룸 무료 숙박권과 레스토랑 이용권 1매 등을 포함해<br>
+                  서울신라호텔의 격조 높은 서비스와 객실 및<br>레스토랑을 할인 받을 수 있으며,<br>
+                  서울신라호텔과 제주신라호텔 레스토랑 이용시 할인을 제공합니다.
+                </p>
+              </li>
+              <li class="shilla-rewardsblue-club members">
+                <ul>
+                  <li><img src="./images/img_main_membershipcard6.png" alt="피트니스멤버십"></li>
+                </ul>
+                <p class="tb-members"><img src="./images/img_main_membershiptb3.png" alt=""></p>
+                <p>
+                  체계적인 체력관리와 프로그램들이 마련된 신라호텔 휘트니스는<br>
+                  한국의 전통미와 현대적인 감감을 겸비하고 있습니다.
+                </p>
+              </li>
+            </ul>
+            <div class="membership-btn">
+              <a href="#" class="membership-link"><span>자세히보기</span></a>
+              <a href="#" class="membership-link"><span>가입문의</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section facility" id="section5">
+        <div class="container">
+          <div class="tit-area">
+            <h2 class="tit-h2">시설소개</h2>              
+          </div>
+          <div class="facilities-slide swiper-container">
+            <ul class="facilities-list swiper-wrapper">
+              <li class="facilities-img swiper-slide">
+                <img src="./images/img_main_facility1.jpg" alt="시설소개1">
+                <div class="facilities-txt">
+                  <p class="tit-h5">서울신라호텔 야외 수영장 <br> '어번 아일랜드 - 문라이트 시네마'</p>
+                  <span>
+                    메인 풀에서 대형 스크린을 통해 감동 가득한 영화를 선사합니다.
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                  <img src="./images/img_main_facility2.jpg" alt="시설소개2">
+                  <div class="facilities-txt">
+                    <p class="tit-h5">서울신라호텔 영빈관</p>
+                    <span>
+                      연회와 파티, 기업인 식사를 포함한 다양한 종류의 식사 행사 등 <br>
+                      만찬과 이벤트용으로 쓰이는 공간입니다.
+                    </span>
+                  </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility3.jpg" alt="시설소개3">
+                <div class="facilities-txt">
+                  <p class="tit-h5">제주신라호텔의 '어덜트 풀'</p>
+                  <span>
+                    성인만 이용할 수 있는 프라이빗 플레이스입니다.
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility4.jpg" alt="시설소개4">
+                <div class="facilities-txt">
+                  <p class="tit-h5">서울신라호텔의 로비 '아트캉스' 전망</p>
+                  <span>
+                    떨어지는 은하수와도 같은 로비의 박선기 작가 작품 등의 <br> 예술 작품을 감상할 수 있습니다.
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility5.jpg" alt="시설소개5">
+                <div class="facilities-txt">
+                  <p class="tit-h5">서울신라호텔 실내 수영장</p>
+                  <span>
+                    메인 풀에서 대형 스크린을 통해 감동 가득한 영화를 선사합니다.
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility6.jpg" alt="시설소개6">
+                <div class="facilities-txt">
+                  <p class="tit-h5">제주신라호텔 '쁘띠카바나'</p>
+                  <span>
+                    푸른 바다를 감상하며 둘만의 오붓한 휴식을 즐기실 수 있습니다.
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility7.jpg" alt="시설소개7">
+                <div class="facilities-txt">
+                  <p class="tit-h5">신라모노그램 '파빌리온'</p>
+                  <span>
+                    신라모노그램 다낭의 우아한 로비
+                  </span>
+                </div>
+              </li>
+              <li class="swiper-slide facilities-img">
+                <img src="./images/img_main_facility8.jpg" alt="시설소개8">
+                <div class="facilities-txt">
+                  <p class="tit-h5">Relaxed & Enjoyable, Shilla Stay Bar</p>
+                </div>
+              </li>
+            </ul>
+            <div class="intro-btn">
+              <span class="intro-prev">이전</span>
+              <span class="intro-next">다음</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 작업담당자 : 이다영 (e) -->
+
+    </main>
+
+    <!-- 작업담당자 : 이다영 (s) -->
+    <footer id="footer"></footer>
+    <!-- 작업담당자 : 이다영 (e) -->
+  </div>
+</body>
+</html>

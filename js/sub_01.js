@@ -102,7 +102,7 @@ $(function(){
 	  // 초기 페이지 설정
     var currentPage = 1;
     var pageSize = 10; // 한 페이지에 보여질 항목 수
-    var faqItems = $(".tab-pannel.on .faq-list .acco-item");
+    var faqItems = $(".tab-pannel.on .acco-list.faq .acco-item");
 
     // 페이지 로드 시 첫 페이지 항목만 표시 
     faqItems.hide().slice(0, pageSize).show();
@@ -817,10 +817,10 @@ $(function(){
 		});
 
 		// faq 총 건수 체크
-		if($('.faq-list').length > 0 && $('.total-num-area.faq').length > 0){
+		if($('.acco-list.faq').length > 0 && $('.total-num-area.faq').length > 0){
 			setTimeout(()=>{
 				$('.total-num-area.faq > em').each(function(){
-					$(this).text($('.faq-list > li').length)
+					$(this).text($('.acco-list.faq > li').length)
 				})
 			}, 800)
 		}

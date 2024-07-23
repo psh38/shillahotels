@@ -4,7 +4,7 @@
 .wrapper {position: relative;}
 
 /* header */
-header{position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: 0.1s 0.1s;}
+header {position: fixed; top: 0; left: 0; right: 0; z-index: 100; transition: 0.1s 0.1s; height: 100px;}
 .header-wrap {display: flex; justify-content: space-between; align-items: center; padding: 32px 48px;}
 .header-wrap .left-hd {display: flex; align-items: center; gap: 16px;}
 .header-wrap .all-menu > button {position: relative; width: 36px; height: 36px; padding: 12px 5px;}
@@ -45,6 +45,9 @@ header.sticky .header-wrap .util-list .lang-drop button:after {border-color: var
 .allmenu-wrap .depth-01-list > li {width:calc(100% / 6); text-align: center; color: var(--subcolor02, #D4B297);}
 .allmenu-wrap .depth-02-list {display:flex; flex-direction:column; gap: 16px; margin-top: 27px;}
 .allmenu-wrap .depth-02-list > li a {color: var(--white, #fff); font-weight: 400; font-size: 16px;}
+
+.allmenu-wrap .util-list,
+.allmenu-wrap .acco-list {display:none;}
 
 /* 전체메뉴 열렸을 때 */
 header.open .header-wrap .all-menu > button > span:after {content: none;}
@@ -304,8 +307,7 @@ address {
     width: 100%
   }
   footer .footer-wrap > ul > li > div {
-    gap: 0;
-    justify-content: space-between;
+    display: block;
   }
   .footer-info-list {
     height: auto;
@@ -349,6 +351,31 @@ address {
 /* 모바일 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
+  .container {padding:0 24px;}
+  /* header */
+  header {height:50px;}
+  .header-wrap {height:100%; padding:0 24px;}
+  .header-wrap .logo {height:auto;}
+  .header-wrap .logo a {width:70px; height:8px; background-size:70px auto;}
+
+  .header-wrap .all-menu > button {width:24px; height:24px;}
+  .header-wrap .all-menu > button:before, 
+  .header-wrap .all-menu > button:after, 
+  .header-wrap .all-menu > button > span:after {width:18px; height:2px;}
+
+  /* header 전체메뉴 */
+  .allmenu-wrap .gnb {display:block; padding-top:100px;}
+  .allmenu-wrap .depth-01-list {display:none;}
+
+  .allmenu-wrap .util-list {display:block; width:100%; color:#fff;}
+  .allmenu-wrap .util-list > li + li {margin-top:16px;}
+  .allmenu-wrap .util-list .sub-list {display:flex; justify-content:space-between;}
+  .allmenu-wrap .util-list .sub-list > li {position:relative; width:50%; text-align:center;}
+  .allmenu-wrap .util-list .sub-list > li:after {content:''; position:absolute; top:5px; right:0; width:1px; height:8px; background-color:#fff;}
+  .allmenu-wrap .util-list .sub-list > li:last-child:after {content:none;}
+
+  .allmenu-wrap .menu-area {background-color:#fff; margin:0 -24px;}
+  .allmenu-wrap .menu-area .acco-list {display:block;}
 
   footer {margin: 0;}
   footer .container {
@@ -362,9 +389,6 @@ address {
   }
   footer .footer-wrap > ul > li {
     margin-bottom: 27px;
-  }
-  footer .footer-wrap > ul > li > div {
-    display: block;
   }
   footer .footer-wrap > ul a img {
     display: none;

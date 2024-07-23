@@ -646,53 +646,72 @@ $(window).on('scroll', function() {
 			}
 		});
 
-		// 쿠키
+		// // 쿠키
 
-		let popup = $('.popup');
-		let input = popup.find('input');
-		console.log(input);
-		let closeBtn = popup.find('button');
+		// let popup = $('.popup');
+		// let input = popup.find('input');
+		// console.log(input);
+		// let closeBtn = popup.find('button');
 		
-		closeBtn.click(function(){
+		// closeBtn.click(function(){
 		
-		  if(input.get(0).checked){
-			// 쿠키생성
-			setCookie('Company','ABC',1);
-		  }else{
-			// 쿠기삭제
-			delCookie('Company');
-		  }
+		//   if(input.get(0).checked){
+		// 	// 쿠키생성
+		// 	setCookie('Company','ABC',1);
+		//   }else{
+		// 	// 쿠기삭제
+		// 	delCookie('Company');
+		//   }
 		
-		  popup.hide();
-		})
-		function setCookie(name,val,day){
-			console.log('쿠키생성함수');
-			let date = new Date();
-			date.setDate(date.getDate()+day);
-			document.cookie = `${name}=${val};Expires=${date}`; 
-		  }
-		function delCookie(name){
-		  let date = new Date();
-		  date.setDate(date.getDate()-1);
-		  document.cookie = `${name}='';Expires=${date}`;
-		}
+		//   popup.hide();
+		// })
+		// function setCookie(name,val,day){
+		// 	console.log('쿠키생성함수');
+		// 	let date = new Date();
+		// 	date.setDate(date.getDate()+day);
+		// 	document.cookie = `${name}=${val};Expires=${date}`; 
+		//   }
+		// function delCookie(name){
+		//   let date = new Date();
+		//   date.setDate(date.getDate()-1);
+		//   document.cookie = `${name}='';Expires=${date}`;
+		// }
 			
-		function checkCookie(name){
-		  let cookieArr = document.cookie.split(';');
-		  let visited = false;
+		// function checkCookie(name){
+		//   let cookieArr = document.cookie.split(';');
+		//   let visited = false;
 		
-		  console.log(cookieArr);
-		  for(let cookie of cookieArr){
-			if(cookie.indexOf(name) > -1 ){
-			  visited = true;
-			}
-		  }
-		  if(visited){
-			popup.removeClass('show');
-		  }else{
-			popup.addClass('show');
-		  }
+		//   console.log(cookieArr);
+		//   for(let cookie of cookieArr){
+		// 	if(cookie.indexOf(name) > -1 ){
+		// 	  visited = true;
+		// 	}
+		//   }
+		//   if(visited){
+		// 	popup.removeClass('show');
+		//   }else{
+		// 	popup.addClass('show');
+		//   }
+		// }
+		//   checkCookie('ABC');
+
+		// ACCORDIAN
+		$('.acco-item').eq(0).addClass('on');
+		if($('.acco-item').eq(0).hasClass('on')){
+			$('.acco-item').eq(0).find('.acco-body').slideDown(400);
 		}
-		  checkCookie('ABC');
+
+		$('.acco-btn').click(function(e){
+			e.preventDefault();
+			console.log($(this).closest('.acco-item'))
+			if(!$(this).closest('.acco-item').hasClass('on')){
+				$(this).closest('.acco-item').addClass('on');
+				$(this).closest('.acco-head').siblings('.acco-body').slideDown(400);
+			}else{
+				$(this).closest('.acco-item').removeClass('on');
+				$(this).closest('.acco-head').siblings('.acco-body').slideUp(400);
+			}
+		})
 
 });
+
